@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lilou Basakha — Événementiel</title>
+  <meta name="description" content="Portfolio de Lilou Basakha, étudiante en bachelor événementiel à l'ISEFAC. Recherche de stage à partir de mai 2027 en Île-de-France.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE / NAVIGATION ===== -->
+  <header class="header">
+    <a href="#accueil" class="logo">Lilou<span>.</span></a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== ACCUEIL ===== -->
+    <section id="accueil" class="hero">
+      <p class="hero-tag">Étudiante en événementiel · ISEFAC</p>
+      <h1>Lilou <em>Basakha</em></h1>
+      <p class="hero-sub">
+        Je transforme des idées en moments qui marquent :
+        <span class="rotating" data-words="soirées,salons,lancements,festivals,séminaires">soirées</span>
+      </p>
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Recherche un stage de 10 semaines dès mai 2027 · Île-de-France
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Me contacter</a>
+        <a href="#projets" class="btn btn-ghost">Voir mes projets</a>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="apropos" class="section reveal">
+      <h2 class="section-title"><span>01</span> À propos</h2>
+      <div class="about">
+        <div class="about-photo">
+          <!-- Remplace par ta photo : <img src="photo.jpg" alt="Lilou Basakha"> -->
+          <div class="photo-placeholder">LB</div>
+        </div>
+        <div class="about-text">
+          <p>
+            Je suis en 1<sup>re</sup> année de bachelor événementiel à l'ISEFAC.
+            Ce qui me plaît dans ce métier, c'est de penser chaque détail pour que
+            les invités, eux, n'aient plus qu'à profiter.
+          </p>
+          <p>
+            <!-- À personnaliser : parle de ce qui t'a donné envie de faire de l'événementiel -->
+            Organisée, curieuse et à l'aise avec le public, j'aime autant préparer
+            un rétroplanning que gérer l'accueil le jour J.
+          </p>
+          <ul class="about-facts">
+            <li><strong>Formation</strong> Bachelor événementiel, ISEFAC</li>
+            <li><strong>Disponibilité</strong> Stage de 10 semaines à partir de mai 2027</li>
+            <li><strong>Zone</strong> Paris &amp; Île-de-France</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS / EXPÉRIENCES ===== -->
+    <section id="projets" class="section reveal">
+      <h2 class="section-title"><span>02</span> Projets &amp; expériences</h2>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">Tout</button>
+        <button class="filter" data-filter="ecole">Projets d'école</button>
+        <button class="filter" data-filter="pro">Expériences</button>
+      </div>
+
+      <div class="cards">
+        <!-- Duplique une <article> pour ajouter un projet. data-category = "ecole" ou "pro" -->
+        <article class="card" data-category="ecole">
+          <div class="card-top">
+            <span class="card-tag">Projet d'école</span>
+            <span class="card-date">2026</span>
+          </div>
+          <h3>Nom du projet</h3>
+          <p>Décris l'événement en deux lignes : le concept, le public, le nombre d'invités.</p>
+          <ul class="card-roles">
+            <li>Conception</li><li>Budget</li><li>Communication</li>
+          </ul>
+        </article>
+
+        <article class="card" data-category="pro">
+          <div class="card-top">
+            <span class="card-tag">Expérience</span>
+            <span class="card-date">2026</span>
+          </div>
+          <h3>Poste — Entreprise</h3>
+          <p>Ce que tu as fait concrètement : accueil, logistique, coordination des prestataires…</p>
+          <ul class="card-roles">
+            <li>Accueil</li><li>Logistique</li>
+          </ul>
+        </article>
+
+        <article class="card" data-category="ecole">
+          <div class="card-top">
+            <span class="card-tag">Projet d'école</span>
+            <span class="card-date">2026</span>
+          </div>
+          <h3>Nom du projet</h3>
+          <p>Objectif, ton rôle dans l'équipe et le résultat (participants, retours, chiffres).</p>
+          <ul class="card-roles">
+            <li>Rétroplanning</li><li>Scénographie</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="competences" class="section reveal">
+      <h2 class="section-title"><span>03</span> Compétences</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Organisation</h3>
+          <ul>
+            <li>Rétroplanning</li><li>Gestion de budget</li>
+            <li>Relation prestataires</li><li>Logistique jour J</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Communication</h3>
+          <ul>
+            <li>Réseaux sociaux</li><li>Création de visuels</li>
+            <li>Rédaction</li><li>Accueil du public</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Outils</h3>
+          <ul>
+            <li>Canva</li><li>Pack Office</li>
+            <li>Instagram / TikTok</li><li>Notion</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Langues</h3>
+          <ul>
+            <li>Français — natif</li><li>Anglais — niveau à préciser</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARCOURS ===== -->
+    <section id="parcours" class="section reveal">
+      <h2 class="section-title"><span>04</span> Parcours</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-date">2026 — 2029</span>
+          <h3>Bachelor Événementiel</h3>
+          <p>ISEFAC · Paris</p>
+        </li>
+        <li>
+          <span class="tl-date">2026</span>
+          <h3>Baccalauréat — spécialités à préciser</h3>
+          <p>Nom du lycée · Ville</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact reveal">
+      <h2 class="section-title"><span>05</span> Contact</h2>
+      <p class="contact-lead">Un événement à préparer, un stage à proposer ? Écrivez-moi.</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field field-full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <p class="form-status" id="formStatus" role="status"></p>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/lilou-basakha-event/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <!-- Remplace par ta vraie adresse (aussi dans index.js) -->
+        <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Lilou Basakha · Portfolio événementiel</p>
+    <a href="#accueil" class="to-top" aria-label="Retour en haut">↑</a>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
