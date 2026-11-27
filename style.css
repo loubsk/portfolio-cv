@@ -25,6 +25,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 75vw 70vh at 88% 18%, rgba(128, 87, 164, .27) 0%, rgba(128, 87, 164, .12) 50%, rgba(128, 87, 164, 0) 100%),
+    radial-gradient(ellipse 80vw 85vh at 10% 78%, rgba(218, 130, 180, .28) 0%, rgba(218, 130, 180, .13) 55%, rgba(218, 130, 180, 0) 100%),
+    radial-gradient(ellipse 65vw 70vh at 70% 55%, rgba(153, 100, 180, .15) 0%, rgba(153, 100, 180, .06) 58%, rgba(153, 100, 180, 0) 100%);
+}
+
+main,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
@@ -67,9 +85,6 @@ img { max-width: 100%; display: block; }
   min-height: 100vh;
   display: flex; flex-direction: column; justify-content: center;
   padding: 7rem 6vw 4rem;
-  background:
-    radial-gradient(circle at 85% 20%, var(--accent-soft) 0, transparent 40%),
-    radial-gradient(circle at 10% 90%, #e8d9ec 0, transparent 35%);
 }
 .hero-tag {
   text-transform: uppercase; letter-spacing: .18em;
